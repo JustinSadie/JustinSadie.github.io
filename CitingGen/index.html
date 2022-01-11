@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    
+</head>
+<body >
+
+        <table>
+            <div class="calc">
+                <h1>Reference Style:</h1><br>
+                <table class="table table-striped" id="table1">
+
+                    <tr>
+                        <h4><b>Articles Form the World Wide Web</b></h4>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Author:</label>
+                            <input size ="50" id="Author" type="text" placeholder="FAO(Food and Agriculture Organisation of the United Nations)">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="">Date:</label>
+                            <input size ="5" id="date"  type="text" placeholder="2019">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Title:</label>
+                            <input size ="35" id="title"  type="text" placeholder="Hunger and Food Security">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Internet Address (URL):</label>
+                            <input size ="35" id="URL"  type="text" placeholder="http://www.fao.org/hunger/en/">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Date of access:</label>
+                            <input size ="10" id="DOA"  type="text" placeholder="29 Jun. 2019">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="">Generated Reference</label>
+                            <input size ="75" id="GenRef"  type="text" disabled >
+                        </td>
+                    </tr>
+                                        
+                    
+                </table>
+
+                <br>
+                    <button onclick="reference()" id="btn1">Generate</button>
+                    <button onclick="clearTable()" id="btn2">Clear</button>
+                </br>
+
+            
+            </div>
+
+        </table>
+
+
+<script src="Reference Generator.js"></script>
+</body>
+</html>

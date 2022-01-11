@@ -1,0 +1,62 @@
+body{
+    background-image:url(BR95\ Coupling\ Rendered\ Image3.bmp);
+    background-repeat: no-repeat;
+    background-position:60% ;
+    background-attachment: fixed; 
+}
+
+#table1{
+    border: 2PX solid black;
+    width: fit-content;
+    margin-left: 10px;
+    
+}
+#table2{
+    border: 2PX solid black;
+    width: fit-content;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+h1{
+    color: #2d4275;
+    background-color: #ffffff;
+    margin-left: 10px;
+}
+h2{
+    color: #2d4275;
+    background-color: #ffffff;
+    margin-left: 10px;
+}
+
+#btn1{
+    color: blue;
+    margin-left: 10px;
+}
+
+#btn2{
+    color: orange;
+}
+
+#logo{
+    float: right;
+}
+#factors{
+    height: 27px;
+}
+#kilowatt{
+    width: 185px;
+}
+
+.calc{
+    border: 10px solid #2d4275;
+    background-color: white;
+    width: 440px;
+    background-image: url();
+    margin-left: -100px;
+    
+}
+
+/* #logo{
+    margin-left: -100px;
+} */

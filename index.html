@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupling </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="coupling.css">
+    
+</head>
+<body >
+
+    <div class="container">
+
+        <nav class="navbar navbar-light ">
+            <a class="navbar-brand" href="#">
+              <img id="logo" src="Picture1.png"  alt="">
+            </a>
+        </nav>
+
+        <div class="calc">
+            <h1>Coupling Selector:</h1><br>
+            <table class="table table-striped" id="table1">
+                <tr>
+                    <td>
+                        <label for="">Kilowatt:</label>
+                        <input id="kilowatt" type="text" placeholder="Enter Electric-Motor Kilowatt">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="">RPM:</label>
+                        <input id="rotationSpeed"  type="text" placeholder="Enter RPM">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        
+                        <select name="" id="factors">
+                            <option value="">Select Application</option>
+                            <option value="1.2">Centrifugal Pumps</option>
+                            <option value="1.2">Fans</option>
+                            <option value="1.2">Belt Conveyors</option>
+                            <option value="1.6">Hammermill</option>
+                            <option value="1.6">Bucket Elevator</option>
+                            <option value="1.6">Scraper Conveyor</option>
+                            <option value="2.4">Reciprocating Pump</option>
+                            <option value="2.4">Compressor(3Cyl or less)</option>
+                            <option value="2">Crusher</option>
+                            <option value="2">Calender</option>
+                            <option value="2">Shaker</option>
+                            <option value="2">Compressor(4 Cyl or more)</option>
+                            <option value="4">Steel Mill rolers Tables</option>
+                            <option value="4">Heavy Reversing Drives</option>
+                            
+                        </select>
+                        <input id="serviceFactor" type="text">
+                    </td>
+                </tr>
+                
+                
+            </table>
+            <br>
+            <button onclick="torqueIt(); results(); couplingSelection(); colorSelection(); displayResults()" id="btn1">Calculate</button>
+            <button onclick="clearTable()" id="btn2">Clear</button>
+
+            <table class="table table-striped" id="table2">
+                <h2>Results:</h2>
+                <tr>
+                    <td>
+                        <label for="">Torque Calculated (Nm):</label>
+                        <input id="torqueResult" type="text" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Torque Required (Nm):</label>
+                        <input id="coupRat" type="text" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Suggested BR Coupling:</label>
+                        <input id="brCouplingSuggest1" type="text" disabled>
+
+                        <label for="">Safety Factor</label>
+                        <input id="sfCouplingSuggest1" type="text" disabled>
+
+                        <p>OR</p>
+
+                        <label for="">Suggested BR Coupling:</label>
+                        <input id="brCouplingSuggest2" type="text" disabled>
+
+                        <label for="">Safety Factor</label>
+                        <input id="sfCouplingSuggest2" type="text" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Suggested Falk Gear Coupling:</label>
+                        <input id="fgearCouplingSuggest1" type="text" disabled>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Suggested Falk Steel Flex Coupling:</label>
+                        <input id="fsteelCouplingSuggest1" type="text" disabled>
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="">Suggested Falk Wrap Flex Coupling:</label>
+                        <input id="fwrapCouplingSuggest1" type="text" disabled>
+                        
+                    </td>
+                </tr>
+
+                
+
+                
+            </table>
+        </div>
+
+    </div>
+<script src="Coupling generator.js"></script>
+</body>
+</html>
